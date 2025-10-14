@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7PG7ZVT');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<link href="css/model-custom.css" rel="stylesheet">
+<link href="css/sidebar-btn.css" rel="stylesheet">
+</head>
+ 
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7PG7ZVT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-12">
+        <form class="form" id="requestaquote" action="https://email-sending-nine.vercel.app/requestquote" method="POST">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="name" type="text" placeholder="Name" id="name" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="email" type="email" placeholder="Email" id="email" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="phone" type="text" placeholder="Phone" id="phone" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div>
+                <select name="machine" id="machine" class="custom-select wide form-control" required
+                  onchange="showSelectedMachine(this.value)">
+                  <option value="" disabled selected>Select Machine</option>
+                  <option value="Machine 1">Machine 1</option>
+                  <option value="Machine 2">Machine 2</option>
+                  <option value="Machine 3">Machine 3</option>
+                  <option value="Machine 4">Machine 4</option>
+                  <option value="Machine 5">Machine 5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input type="text" placeholder="Date" id="datepicker" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="form-group">
+                <textarea name="message" placeholder="Write Your Message Here....." id="message"
+                  class="form-control" required></textarea>
+              </div>
+            </div>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-4 col-12">
+              <div class="form-group">
+                <div class="button">
+                  <button type="submit" class="btn btn-primary">Request A Quote</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-8 col-12">
+              <div class="form-group">
+                <p>Selected Machine: <span id="selectedMachine"></span></p>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="machineComponents" style="display: none;">
+          <!-- Machine 1 Components -->
+          <div id="machine1" class="machine-components">
+            <h3>Machine 1 Components</h3>
+            <ul>
+              <li>Component 1</li>
+              <li>Component 2</li>
+              <li>Component 3</li>
+            </ul>
+          </div>
+          <!-- Machine 2 Components -->
+          <div id="machine2" class="machine-components">
+            <h3>Machine 2 Components</h3>
+            <ul>
+              <li>Component A</li>
+              <li>Component B</li>
+              <li>Component C</li>
+            </ul>
+          </div>
+          <!-- Machine 3 Components -->
+          <div id="machine3" class="machine-components">
+            <h3>Machine 3 Components</h3>
+            <ul>
+              <li>Component X</li>
+              <li>Component Y</li>
+              <li>Component Z</li>
+            </ul>
+          </div>
+          <!-- Machine 4 Components -->
+          <div id="machine4" class="machine-components">
+            <h3>Machine 4 Components</h3>
+            <ul>
+              <li>Component Alpha</li>
+              <li>Component Beta</li>
+              <li>Component Gamma</li>
+            </ul>
+          </div>
+          <!-- Machine 5 Components -->
+          <div id="machine5" class="machine-components">
+            <h3>Machine 5 Components</h3>
+            <ul>
+              <li>Component A1</li>
+              <li>Component B2</li>
+              <li>Component C3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 ">
+        <div class="appointment-image">
+          <img src="img/Auto Rotary Nasal Line.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+  <script>
+    function showSelectedMachine(selectedMachine) {
+      document.getElementById('selectedMachine').innerText = selectedMachine;
+      document.getElementById('machineComponents').style.display = 'block';
+      var machineComponents = document.getElementsByClassName('machine-components');
+      for (var i = 0; i < machineComponents.length; i++) {
+        machineComponents[i].style.display = 'none';
+      }
+     
+      document.getElementById(selectedMachine.toLowerCase().replace(/\s+/g, '')).style.display = 'block';
+    }
+  </script>
+ 
+<script src="js/custom.js"></script>
+<div id="cstm-header56"></div>
+</body>
+ 
+</html>

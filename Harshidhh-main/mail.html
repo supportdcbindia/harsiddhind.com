@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Sender</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7PG7ZVT');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<link href="css/model-custom.css" rel="stylesheet">
+<link href="css/sidebar-btn.css" rel="stylesheet">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7PG7ZVT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <input type="email" id="emailInput" placeholder="Enter your email">
+  <button onclick="sendEmail()">Send Email</button>
+
+  <script>
+    function sendEmail() {
+      const email = document.getElementById('emailInput').value;
+
+      fetch('http://localhost:5500/send-email', { // Update port to 5500
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email })
+      })
+      .then(response => response.text())
+      .then(result => {
+        alert(result);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error sending email');
+      });
+    }
+  </script>
+<script src="js/custom.js"></script>
+<div id="cstm-header56"></div>
+</body>
+</html>
