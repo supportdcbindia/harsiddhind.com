@@ -4864,3 +4864,6 @@ body {
         margin-top: 20px;
     }
 }
+.get-timeline{
+    display: none;
+}
