@@ -4878,4 +4878,8 @@ body {
     .innerInqForm {
         padding: 50px 0px;
     }
+
+    section .row:has(.table-responsive) {
+        display: contents;
+    }
 }
