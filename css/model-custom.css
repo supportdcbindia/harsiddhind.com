@@ -513,3 +513,11 @@ a.content-p{
 select[name="country"] {
     display: block !important;
 }
+
+.modal-backdrop.show {
+    z-index: 999999 !important;
+}
+
+#onload {
+    z-index: 9999999 !important;
+}
