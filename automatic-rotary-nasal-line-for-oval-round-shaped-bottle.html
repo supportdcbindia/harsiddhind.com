@@ -293,6 +293,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
+        <section class="innerInqForm my-custom-modal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Request A Quote</h2>
+                    <img src="img/section-img.png" alt="#">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal form4" action="inquiry-action.php" method="post" novalidate="novalidate">
+                                <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="name" id="name" type="text" placeholder="Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="company_name" id="company_name" type="text" placeholder="Company Name"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="email" id="email" type="text" placeholder="E-Mail Address"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group has-feedback class-feedback">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 mybottom">
+                                                <select id="country1" name="country" class="form-control"></select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 mybottom" style="display: none;">
+                                                <select name="code" id="state1" class="form-control"
+                                                    style="padding-right: 0;color: #999;">
+                                                    <option value="">+00</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="city" id="city" type="text" placeholder="City" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="number" id="number" type="tel" placeholder="Phone" maxlength="15"
+                                            minlength="8" class="form-control number21">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group has-feedback">
+                                        <textarea class="form-control" name="message" id="message"
+                                            placeholder="Requirement"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group has-feedback">
+                                        <div class="row">
+                                            <div class="col-md-8 col position-relative">
+                                                <input name="captcha" id="captcha" placeholder="Captcha Code"
+                                                    class="form-control" type="text">
+                                            </div>
+                                            <div class="col-md-4 col">
+                                                <img src="captcha.php" class="capside">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="submit" class="submit submitbutton" type="submit" value="Submit Now!">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer Area -->
         <footer id="footer" class="footer ">
 			<!-- Footer Top -->
