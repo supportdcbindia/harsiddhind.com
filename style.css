@@ -4867,3 +4867,11 @@ body {
 .get-timeline{
     display: none;
 }
+
+.modal-backdrop.show {
+    z-index: 999999 !important;
+}
+
+#onload {
+    z-index: 9999999 !important;
+}
