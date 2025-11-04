@@ -161,7 +161,7 @@ if ($response->result) {
 
                     <tr>
                       <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Mobile:</td>
-                      <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $code . ' - ' . $phone . '</b></td>
+                      <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $country_code . ' - ' . $phone . '</b></td>
                     </tr>
                     
                     <tr>
