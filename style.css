@@ -4882,4 +4882,8 @@ body {
     section .row:has(.table-responsive) {
         display: contents;
     }
+
+    .footer {
+        padding-bottom: 30px;
+    }
 }
