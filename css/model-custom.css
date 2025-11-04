@@ -519,6 +519,6 @@ select[name="country"] {
     z-index: 999999 !important;
 }
 
-#onload {
+#onload, #onload1, #onload2 {
     z-index: 99999999 !important;
 }

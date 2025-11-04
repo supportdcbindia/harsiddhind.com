@@ -58,7 +58,7 @@ if (IS_DOMESTIC == true) {
 }
 $path=$_POST['path'];
 $path1=explode("/",$path);
-$websiteDomain = "keoncoldroom.in"; ## for example 
+$websiteDomain = "harsiddhind.com"; ## for example 
 // $allowed_origins = array(
 //   'https://' . $websiteDomain,
 //   'https://www.' . $websiteDomain,
