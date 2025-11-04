@@ -42,28 +42,31 @@
                 z-index: 2;
             }
         </style>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P7PG7ZVT');</script>
-<!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P7PG7ZVT');</script>
+        <!-- End Google Tag Manager -->
 
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-</script>
-<link href="css/model-custom.css?ver=1.0" rel="stylesheet">
-<link href="css/sidebar-btn.css" rel="stylesheet">
-</head>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+        </script>
+        <link href="css/model-custom.css?ver=1.0" rel="stylesheet">
+        <link href="css/sidebar-btn.css" rel="stylesheet">
+    </head>
 
     <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7PG7ZVT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7PG7ZVT" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
         <!-- Preloader -->
         <div class="preloader">
@@ -139,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="col-lg-2 col-12">
                                 <div class="get-quote" id="openModalBtn" data-bs-toggle="modal"
                                     data-bs-target="#brochureModal">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -279,95 +282,184 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
+        <section class="innerInqForm my-custom-modal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Request A Quote</h2>
+                    <img src="img/section-img.png" alt="#">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal form4" action="inquiry-action.php" method="post" novalidate="novalidate">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback">
+                                        <input name="name" id="name" type="text" placeholder="Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback">
+                                        <input name="company_name" id="company_name" type="text" placeholder="Company Name"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback">
+                                        <input name="email" id="email" type="text" placeholder="E-Mail Address"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback class-feedback">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 mybottom">
+                                                <select id="country1" name="country" class="form-control"></select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 mybottom" style="display: none;">
+                                                <select name="code" id="state1" class="form-control"
+                                                    style="padding-right: 0;color: #999;">
+                                                    <option value="">+00</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback">
+                                        <input name="city" id="city" type="text" placeholder="City" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback">
+                                        <input name="number" id="number" type="tel" placeholder="Phone" maxlength="15"
+                                            minlength="8" class="form-control number21">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group has-feedback">
+                                        <textarea class="form-control" name="message" id="message"
+                                            placeholder="Requirement"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group has-feedback">
+                                        <div class="row">
+                                            <div class="col-md-8 col position-relative">
+                                                <input name="captcha" id="captcha" placeholder="Captcha Code"
+                                                    class="form-control" type="text">
+                                            </div>
+                                            <div class="col-md-4 col">
+                                                <img src="captcha.php" class="capside">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group has-feedback">
+                                        <input name="submit" class="submit submitbutton" type="submit" value="Submit Now!">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer Area -->
-	<footer id="footer" class="footer ">
-		<!-- Footer Top -->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-5 col-12">
-						<div class="single-footer">
-							<h2>About Us</h2>
-							<p>Established in 1987 HARSIDDH PHARMAMACH PVT LTD (formerly: HARSIDDH INDUSTRIES) has
-								completed 35 years now. Backed up by long and vast experience in the line we
-								manufacture
-								complete aseptic packaging line solutions for liquid and injectable in sterile
-								conditions with latest advanced technologies with innovative ideas to render
-								satisfactory performance round-the- clock.</p>
-							<!-- Social -->
-							<!-- <ul class="social">
+        <footer id="footer" class="footer ">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-12">
+                            <div class="single-footer">
+                                <h2>About Us</h2>
+                                <p>Established in 1987 HARSIDDH PHARMAMACH PVT LTD (formerly: HARSIDDH INDUSTRIES) has
+                                    completed 35 years now. Backed up by long and vast experience in the line we
+                                    manufacture
+                                    complete aseptic packaging line solutions for liquid and injectable in sterile
+                                    conditions with latest advanced technologies with innovative ideas to render
+                                    satisfactory performance round-the- clock.</p>
+                                <!-- Social -->
+                                <!-- <ul class="social">
 								<li><a href="#"><i class="icofont-facebook"></i></a></li>
 								<li><a href="#"><i class="icofont-google-plus"></i></a></li>
 								<li><a href="#"><i class="icofont-twitter"></i></a></li>
 								<li><a href="#"><i class="icofont-vimeo"></i></a></li>
 								<li><a href="#"><i class="icofont-pinterest"></i></a></li>
 							</ul> -->
-							<!-- End Social -->
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-12 cstm-footer-links">
-						<div class="single-footer f-link">
-							<h2>Quick Links</h2>
-							<ul>
-								<li><a href="index.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>Home</a>
-								</li>
-								<li><a href="about-us.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>About Us</a>
-								</li>
-								<li><a href="products.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>Products</a>
-								</li>
-								<li><a href="service.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>Services</a>
-								</li>
+                                <!-- End Social -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12 cstm-footer-links">
+                            <div class="single-footer f-link">
+                                <h2>Quick Links</h2>
+                                <ul>
+                                    <li><a href="index.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Home</a>
+                                    </li>
+                                    <li><a href="about-us.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>About Us</a>
+                                    </li>
+                                    <li><a href="products.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Products</a>
+                                    </li>
+                                    <li><a href="service.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Services</a>
+                                    </li>
 
-								<!-- <li><a href="notice.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Legal
+                                    <!-- <li><a href="notice.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Legal
 									Notice</a></li> -->
-								<li><a href="contact.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>Contact Us</a></li>
-								<li><a href="policy.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>Privacy
-										Policy</a></li>
-								<li><a href="cookies.html"><i class="fa fa-caret-right"
-											aria-hidden="true"></i>Cookies</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-12">
-						<div class="single-footer">
-							<h2>Contact Us</h2>
-							<p>2204, PHASE - 4, G. I. D. C., NR. RAMOL CROSS ROAD, VATVA, AHMEDABAD -
-								382445,<br>GUJARAT, INDIA</p>
-							<ul class="time-sidual">
-								<li class="day"><strong>Phone : </strong> <span><a href="tel:+917940307151">+91 (79)40307151</a></span></li>
-								<li class="day"><strong>Mobile : </strong> <span><a href="tel:+919426170923">+91 94261 70923</a></span></li>
-								<li class="day"><strong>Email : </strong> <span><a href="mailto:jayesh@harsiddhind.com">jayesh@harsiddhind.com</a></span></li>
-								<li class="day"><strong>Website : </strong><span><a href="./">www.harsiddhind.com</a></span></li>
-							</ul>
-						</div>
-					</div>
+                                    <li><a href="contact.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Contact Us</a></li>
+                                    <li><a href="policy.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Privacy
+                                            Policy</a></li>
+                                    <li><a href="cookies.html"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Cookies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer">
+                                <h2>Contact Us</h2>
+                                <p>2204, PHASE - 4, G. I. D. C., NR. RAMOL CROSS ROAD, VATVA, AHMEDABAD -
+                                    382445,<br>GUJARAT, INDIA</p>
+                                <ul class="time-sidual">
+                                    <li class="day"><strong>Phone : </strong> <span><a href="tel:+917940307151">+91
+                                                (79)40307151</a></span></li>
+                                    <li class="day"><strong>Mobile : </strong> <span><a href="tel:+919426170923">+91
+                                                94261 70923</a></span></li>
+                                    <li class="day"><strong>Email : </strong> <span><a
+                                                href="mailto:jayesh@harsiddhind.com">jayesh@harsiddhind.com</a></span>
+                                    </li>
+                                    <li class="day"><strong>Website : </strong><span><a
+                                                href="./">www.harsiddhind.com</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
 
-				</div>
-			</div>
-		</div>
-		<!--/ End Footer Top -->
-			<!-- Copyright -->
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-12">
-							<div class="copyright-content">
-								<p>&copy; <span id="currentYear"></span> | All Rights Reserved by <a href="index.html"
-										target="_blank">Harsiddhind Pharma</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ End Copyright -->
-		</footer>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Footer Top -->
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="copyright-content">
+                                <p>&copy; <span id="currentYear"></span> | All Rights Reserved by <a href="index.html"
+                                        target="_blank">Harsiddhind Pharma</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Copyright -->
+        </footer>
         <!--/ End Footer Area -->
 
         <!-- jquery Min JS -->
@@ -440,8 +532,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // console.log("HII ✨")
         </script>
 
-    <script src="js/custom.js"></script>
-<div id="cstm-header56"></div>
-</body>
+        <script src="js/custom.js"></script>
+        <div id="cstm-header56"></div>
+    </body>
 
 </html>

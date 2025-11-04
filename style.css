@@ -4867,3 +4867,9 @@ body {
 .get-timeline{
     display: none;
 }
+
+.innerInqForm {
+    padding: 50px 0px;
+    background-color: #e4e4e4;
+    margin-top: 30px;
+}

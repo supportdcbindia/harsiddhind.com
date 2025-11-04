@@ -113,6 +113,7 @@ select {
     min-height: 47px;
     font-weight: 500;
     background: #fff;
+    padding: 10px 10px;
 }
 
 .captcha-code .input-group {
