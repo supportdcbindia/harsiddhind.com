@@ -4873,3 +4873,9 @@ body {
     background-color: #e4e4e4;
     margin-top: 30px;
 }
+
+@media (max-width:767px) {
+    .innerInqForm {
+        padding: 50px 0px;
+    }
+}
